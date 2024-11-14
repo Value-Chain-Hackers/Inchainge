@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Inchainge Agents"
-  author: "Norah Jones"
+  author: "Christiaan Verhoef"
   date: "14/11/2024"
   chapters:
     - index.qmd
