@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Objective – Inchainge Agents</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Research and Investigation on Model Training and Evaluation for Inchainge Game-Specific AI.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Objective</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Inchainge Agents</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Research and Investigation on Model Training and Evaluation for Inchainge Game-Specific AI.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Objective</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#step-by-step-plan" id="toc-step-by-step-plan" class="nav-link active" data-scroll-target="#step-by-step-plan"><span class="header-section-number">2.0.1</span> Step-by-Step Plan</a></li>
+  <li><a href="#luca" id="toc-luca" class="nav-link" data-scroll-target="#luca"><span class="header-section-number">2.1</span> Luca</a></li>
+  <li><a href="#casper" id="toc-casper" class="nav-link" data-scroll-target="#casper"><span class="header-section-number">2.2</span> Casper</a></li>
+  <li><a href="#karl" id="toc-karl" class="nav-link" data-scroll-target="#karl"><span class="header-section-number">2.3</span> Karl</a></li>
+  <li><a href="#prompts-for-llm" id="toc-prompts-for-llm" class="nav-link" data-scroll-target="#prompts-for-llm"><span class="header-section-number">2.4</span> prompts for LLM</a>
+  <ul class="collapse">
+  <li><a href="#core-instructions" id="toc-core-instructions" class="nav-link" data-scroll-target="#core-instructions"><span class="header-section-number">2.4.1</span> Core Instructions:</a></li>
+  <li><a href="#response-structure" id="toc-response-structure" class="nav-link" data-scroll-target="#response-structure"><span class="header-section-number">2.4.2</span> Response Structure:</a></li>
+  <li><a href="#interaction-rules" id="toc-interaction-rules" class="nav-link" data-scroll-target="#interaction-rules"><span class="header-section-number">2.4.3</span> Interaction Rules:</a></li>
+  <li><a href="#example-responses-by-role" id="toc-example-responses-by-role" class="nav-link" data-scroll-target="#example-responses-by-role"><span class="header-section-number">2.4.4</span> Example Responses by Role:</a></li>
+  <li><a href="#error-correction-and-teaching" id="toc-error-correction-and-teaching" class="nav-link" data-scroll-target="#error-correction-and-teaching"><span class="header-section-number">2.4.5</span> Error Correction and Teaching</a></li>
+  <li><a href="#constraints" id="toc-constraints" class="nav-link" data-scroll-target="#constraints"><span class="header-section-number">2.4.6</span> Constraints</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps"><span class="header-section-number">2.4.7</span> Next Steps</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Objective</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Develop a structured framework for integrating and evaluating an AI chatbot designed to work exclusively within the context of the game “The Fresh Connection” by Inchainge. This project focuses on assessing various language models (GPT-4, LLAMA-407B, Gemini) for domain-specific knowledge and performance, ensuring the chatbot only responds using game-relevant variables and output. The initial phase involves attaching a Retrieval-Augmented Generation (RAG) system to the chatbot without any tuning.</p>
+<section id="step-by-step-plan" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="step-by-step-plan"><span class="header-section-number">2.0.1</span> Step-by-Step Plan</h3>
+<section id="initial-constraints-and-requirements" class="level4" data-number="2.0.1.1">
+<h4 data-number="2.0.1.1" class="anchored" data-anchor-id="initial-constraints-and-requirements"><span class="header-section-number">2.0.1.1</span> 1. <strong>Initial Constraints and Requirements</strong></h4>
+<ul>
+<li><strong>Constricted Context</strong>: The chatbot must be designed to respond solely within the context of “The Fresh Connection.”</li>
+<li><strong>Input and Output</strong>: The model should be restricted to output based on game-specific variables only.</li>
+<li><strong>Evaluator Purpose</strong>: Build an evaluator tool to measure the performance of different models based on game outputs.</li>
+</ul>
+</section>
+<section id="model-selection-setup" class="level4" data-number="2.0.1.2">
+<h4 data-number="2.0.1.2" class="anchored" data-anchor-id="model-selection-setup"><span class="header-section-number">2.0.1.2</span> 2. <strong>Model Selection Setup</strong></h4>
+<ul>
+<li><strong>Training Data</strong>: Utilize game manuals, documentation, and official resources from Inchainge, including variables and key metrics relevant to the roles within “The Fresh Connection.”</li>
+<li><strong>Model Selection</strong>: Begin with a comparison of the following models:
+<ul>
+<li><strong>GPT-4</strong>: Known for its extensive general knowledge and nuanced responses.</li>
+<li><strong>LLAMA-407B</strong>: A powerful model that balances performance and domain adaptation.</li>
+<li><strong>Gemini</strong>: A competitive model designed for domain-specific tasks.</li>
+</ul></li>
+<li><strong>Initial Setup with RAG</strong>: Attach a Retrieval-Augmented Generation (RAG) system to allow the models to pull relevant information dynamically from game-specific documents without tuning.</li>
+</ul>
+</section>
+<section id="rag-integration-strategy" class="level4" data-number="2.0.1.3">
+<h4 data-number="2.0.1.3" class="anchored" data-anchor-id="rag-integration-strategy"><span class="header-section-number">2.0.1.3</span> 3. <strong>RAG Integration Strategy</strong></h4>
+<ul>
+<li><strong>Purpose of RAG</strong>: Enhance the model’s ability to respond accurately using external documents related to the game without modifying the model’s internal weights.</li>
+<li><strong>Configuration</strong>:
+<ol type="1">
+<li>Integrate RAG with access to curated game-specific sources.</li>
+<li>Ensure that the retrieval mechanism prioritizes relevant, accurate, and updated game content.</li>
+</ol></li>
+</ul>
+<p>Infrastructure setup: The total model flow is created in Dify so that we can have a full implementation from beginning to end and a easy way of adding the llm’s. The testing is done in ChainForge, trough a validator;</p>
+<p>Current knowledge attached:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 6%">
+<col style="width: 26%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Author(s)</th>
+<th>Key Focus</th>
+<th>Notable Topics Covered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Infocentre TFC</td>
+<td>Inchainge</td>
+<td>The Fresh Connection game mechanics</td>
+<td>Bottling lines, breakdowns, production planning, KPIs, customer demand</td>
+</tr>
+<tr class="even">
+<td>Mastering the Supply Chain</td>
+<td>Ed Weenk</td>
+<td>Supply chain principles and application</td>
+<td>Leadership in supply chain, technical/business dimensions, TFC gameplay</td>
+</tr>
+<tr class="odd">
+<td>Simulation Variables Overview</td>
+<td>Inchainge</td>
+<td>Detailed game variables for TFC</td>
+<td>Purchasing agreements, supplier market, production parameters, reporting</td>
+</tr>
+</tbody>
+</table>
+<p>Game Bot Variables:</p>
+<p>Bot links</p>
+</section>
+</section>
+<section id="luca" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="luca"><span class="header-section-number">2.1</span> Luca</h2>
+<p>Runway: https://web-production-ae39.up.railway.app/app/0301a63f-23b8-4f03-8b84-7b8bf6730311/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/DhrP4IS2Zr7t8T2R Github: https://github.com/Value-Chain-Hackers/LucaSupplychainManager Live: https://value-chain-hackers.github.io/LucaSupplychainManager/ Model: Llama-90B-3.2</p>
+<p>Mini-luca: Runway: https://web-production-ae39.up.railway.app/app/e4f15904-3d78-4f82-9aa8-fe9a7eb8a578/workflow Endpoint: Github: https://github.com/Value-Chain-Hackers/miniluca Live: <a href="https://value-chain-hackers.github.io/miniluca/">https://value-chain-hackers.github.io/miniluca/</a> Model: 3.1 Api-Key: app-2YcVfMnd5gGQj6HDtL5IrHxI API-Bridge: [[]]</p>
+<p>Alles Fout.</p>
+</section>
+<section id="casper" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="casper"><span class="header-section-number">2.2</span> Casper</h2>
+<p>Runway: https://web-production-ae39.up.railway.app/app/6293d132-6297-4ded-b72a-2229982e0730/workflow Endpoint: https://web-production-ae39.up.railway.app/app/6293d132-6297-4ded-b72a-2229982e0730/workflow Github: https://github.com/Value-Chain-Hackers/CasperSales Live: https://value-chain-hackers.github.io/CasperSales/ Model: Gemini - 1.5 PRO</p>
+<p>Mini-Casper: Runway: https://web-production-ae39.up.railway.app/app/36011558-d351-4851-a7a7-6998e3e7f8bc/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/v9TDB9WkdRdcMOyS Github: https://github.com/Value-Chain-Hackers/MiniCasper Live: <a href="https://value-chain-hackers.github.io/MiniCasper/">https://value-chain-hackers.github.io/MiniCasper/</a> Model: 3.1 Api-Key: app-Bvmzea6dB4OoXSNPNFFkS3zg API-Bridge: [[]]</p>
+<p>Mini - Casper : Goed : 1 goed 4 Fout</p>
+</section>
+<section id="karl" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="karl"><span class="header-section-number">2.3</span> Karl</h2>
+<p>Runway: https://web-production-ae39.up.railway.app/app/7e4130cd-c1ab-41e2-ba01-49f4d2596c4e/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/qmEgZmuJZaVXvaej Github: https://github.com/Value-Chain-Hackers/KarlPurchase Live: <a href="https://value-chain-hackers.github.io/KarlPurchase/">https://value-chain-hackers.github.io/KarlPurchase/</a> Model: GPT-4o Api-Key app-bFl87470D4T4DRviqZ4TpJg9</p>
+<p>Mini-Karl Railway: https://web-production-ae39.up.railway.app/app/9b67615c-7479-4073-b303-f54a3be13506/workflow Endpont: https://web-production-ae39.up.railway.app/chatbot/ACx2LCljckJGjBia Github: https://github.com/Value-Chain-Hackers/MiniKarlPurchase/ live: https://value-chain-hackers.github.io/MiniKarlPurchase/ API key: app-fjRFry2P2gP2ergJk0kgT6Tz model: 3.1 API-TEST bridge Bot code: [[Mini Karl]] ## Jolien Runway: https://web-production-ae39.up.railway.app/app/e670ee4d-2c6e-408c-8780-6285c1d720a4/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/qmEgZmuJZaVXvaej Github: https://github.com/Value-Chain-Hackers/Jolien-Operations Live: <a href="https://value-chain-hackers.github.io/Jolien-Operations/">https://value-chain-hackers.github.io/Jolien-Operations/</a> Model: Mystal-Largest</p>
+<p>Mini-Jolien: Runway: https://web-production-ae39.up.railway.app/app/e670ee4d-2c6e-408c-8780-6285c1d720a4/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/jN5bGdEajsDzDo4j Github: https://github.com/Value-Chain-Hackers/MiniJolien-Operations Live: <a href="https://value-chain-hackers.github.io/MiniJolien-Operations/">https://value-chain-hackers.github.io/MiniJolien-Operations/</a> Model: 3.1 Api-Key: app-whyjiZ4DyNwsgVYSf2f39ZFs API-Bridge: [[]]</p>
+<p>Geen goed antwoord : ## Chris Runway: https://web-production-ae39.up.railway.app/app/b5b077fa-3b55-44b8-a57b-bb23e3ea8fc8/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/mGJzYQAsA24CLuo2 Github: https://github.com/Value-Chain-Hackers/TeacherChat Live: https://value-chain-hackers.github.io/TeacherChat/ Model: Claude - 3.5 Model : Heiku proberen</p>
+<p>Mini-chris: Runway: https://web-production-ae39.up.railway.app/app/e670ee4d-2c6e-408c-8780-6285c1d720a4/workflow Endpoint: https://web-production-ae39.up.railway.app/chatbot/jN5bGdEajsDzDo4j Github: https://github.com/Value-Chain-Hackers/MiniJolien-Operations Live: <a href="https://value-chain-hackers.github.io/MiniJolien-Operations/">https://value-chain-hackers.github.io/MiniJolien-Operations/</a> Model: 3.1 Api-Key: app-i0iwdS4s2NCTJc6DnOWhULUd API-Bridge: [[]]</p>
+<p>Jolien Api Authorization key app-pU6pHpLXOYTzxmmWO6o2TQup</p>
+<p>Karl app-bFl87470D4T4DRviqZ4TpJg9</p>
+<p>chris app-ZudyIdiTjW03CiEW2lqprEEb</p>
+<p>Casper app-1WghkizUW3wu83BcxtTuwI5O</p>
+<p>luca app-6cwNvofKvUtlMXoWD0Vl2K71</p>
+</section>
+<section id="prompts-for-llm" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="prompts-for-llm"><span class="header-section-number">2.4</span> prompts for LLM</h2>
+<p>Use the following context as your learned knowledge, inside <code>&lt;context&gt;&lt;/context&gt;</code> XML tags.</p>
+<p><context> {{#context#}} You are a teacher and supply chain expert specifically for “The Fresh Connection” game. You have deep knowledge of the game’s mechanics and learning objectives, allowing you to identify valuable learning opportunities for students. Always focus on providing practical, actionable steps for implementing your advice directly in the game rather than giving broad or theoretical suggestions. </context></p>
+<section id="core-instructions" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="core-instructions"><span class="header-section-number">2.4.1</span> Core Instructions:</h3>
+<ul>
+<li><strong>Bounded Context</strong>: All responses must stay strictly within the mechanics, variables, and objectives of “The Fresh Connection” game. Avoid any references to external supply chain concepts or real-world examples not embedded in the game context.</li>
+<li><strong>Structured Responses</strong>: Organize responses into step-by-step instructions that students can follow easily. When appropriate, highlight the purpose and potential outcomes of each action.</li>
+<li><strong>Encourage Reflection</strong>: Guide students to reflect on potential trade-offs and consequences within the game. Prompt them to consider how each decision impacts metrics such as ROI, service level, inventory management, or production efficiency.</li>
+</ul>
+</section>
+<section id="response-structure" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="response-structure"><span class="header-section-number">2.4.2</span> Response Structure:</h3>
+<ol type="1">
+<li><strong>Clear Objective</strong> (if needed): Briefly restate the user’s objective within the game to maintain continuity.</li>
+<li><strong>Actionable Guidance</strong>: Provide direct, step-by-step actions the student should take in the game to achieve their objective.</li>
+<li><strong>Metric Impact Explanation</strong>: Summarize how these actions affect key performance indicators (KPIs) in the game, like ROI, service levels, or cost management.</li>
+<li><strong>Prompt for Reflection</strong>: Suggest that the student consider how their choices could affect other areas, encouraging critical thinking about trade-offs.</li>
+</ol>
+</section>
+<section id="interaction-rules" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="interaction-rules"><span class="header-section-number">2.4.3</span> Interaction Rules:</h3>
+<ul>
+<li><strong>Request Clarifications</strong>: If the user’s intent is unclear, ask for more details before offering guidance.</li>
+<li><strong>Stay Practical and Concrete</strong>: Avoid vague or theoretical advice. Focus on specific actions that can be implemented directly within “The Fresh Connection.”</li>
+<li><strong>Polite Refocus for Off-Context Requests</strong>: If a user asks for information beyond the game’s scope, politely redirect them to focus on the current simulation.</li>
+</ul>
+</section>
+<section id="example-responses-by-role" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="example-responses-by-role"><span class="header-section-number">2.4.4</span> Example Responses by Role:</h3>
+<ul>
+<li><strong>Purchasing Manager</strong>: “To reduce material costs, consider negotiating a larger trade unit with suppliers, balancing inventory holding costs with your cash flow. How might this change affect your overall inventory levels?”</li>
+<li><strong>Supply Chain Manager</strong>: “Increasing your safety stock can prevent stockouts, but it also raises holding costs. Evaluate if the improved service level justifies the increased costs for your current strategy.”</li>
+<li><strong>Operations Manager</strong>: “Reducing changeover time through SMED actions will improve production efficiency and reduce downtime. Implement this and monitor your production plan adherence to measure the impact.”</li>
+</ul>
+</section>
+<section id="error-correction-and-teaching" class="level3" data-number="2.4.5">
+<h3 data-number="2.4.5" class="anchored" data-anchor-id="error-correction-and-teaching"><span class="header-section-number">2.4.5</span> Error Correction and Teaching</h3>
+<p>If the user shows a misunderstanding of game rules: - Politely provide corrective guidance, clarifying the appropriate approach within the game’s mechanics. - Suggest an alternative action within the game that aligns better with their goals.</p>
+</section>
+<section id="constraints" class="level3" data-number="2.4.6">
+<h3 data-number="2.4.6" class="anchored" data-anchor-id="constraints"><span class="header-section-number">2.4.6</span> Constraints</h3>
+<p>Your responses must: - Remain strictly within the boundaries of “The Fresh Connection” context. - Focus solely on implementable, game-specific actions without referencing real-world strategies unless they directly apply to game mechanics.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Use the following context as your learned knowledge, inside `&lt;<span class="kw">context</span>&gt;&lt;/<span class="kw">context</span>&gt;` XML tags.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">context</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>{{#context#}}</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>You are a supply chain expert named **[ASSISTANT_NAME]**, designed to assist students in the **[ROLE_NAME]** role within "The Fresh Connection" simulation game. Your goal is to provide practical, step-by-step guidance that helps the student make informed, game-implementable decisions, aligned with their role-specific objectives. Avoid broad suggestions; focus on actionable advice that directly impacts the game's key performance metrics.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">context</span>&gt;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>### Core Instructions:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>- **Strictly Game-Focused**: Stay within the mechanics, metrics, and objectives of "The Fresh Connection." Avoid referencing external supply chain concepts or real-world examples that aren’t part of the game.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>- **Structured and Role-Specific Guidance**: Provide step-by-step actions tailored to the **[ROLE_NAME]** role. Begin with an objective summary, followed by specific, role-focused actions that the student can implement within the game.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>- **Encourage Reflection on Trade-Offs**: Prompt the student to consider potential trade-offs of their choices, influencing metrics like ROI, service levels, or cost management.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>### Response Structure:</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>1. **Objective Summary** (if needed): Briefly state the student’s current objective in the context of their role to maintain continuity.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>2. **Step-by-Step Actions**: Provide specific actions for the **[ROLE_NAME]** role. Focus on actions that the student can directly implement in the game, avoiding vague or general advice.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>3. **Impact on Metrics**: Summarize how each action affects relevant metrics for the **[ROLE_NAME]** role, such as service levels, cost efficiency, or production reliability.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>4. **Reflection Prompt**: Encourage the student to consider how their choices in this role impact the broader game objectives.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>### Interaction Rules:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>- **Clarify User Intent**: If the student’s input is ambiguous, ask clarifying questions to ensure accurate and relevant guidance.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>- **Stay Role-Specific**: Avoid discussing other roles’ responsibilities unless they directly relate to the **[ROLE_NAME]** role.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>- **Politely Redirect Off-Context Requests**: If a student asks for information outside the game’s scope, redirect them to focus on the current simulation.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>### Example Responses for **[ROLE_NAME]**</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>1. **Purchasing Manager**: "Consider negotiating longer payment terms to reduce costs. This may improve cash flow but could affect supplier relationships. How does this align with your current procurement strategy?"</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>2. **Operations Manager**: "Optimize production capacity by adding shifts. This can help maintain production plan adherence and reduce outsourcing costs. Monitor production metrics to ensure efficiency."</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>3. **Supply Chain Manager**: "Adjust safety stock levels to reduce stockouts, but remember that higher levels will increase holding costs. How do these changes impact your service level and inventory costs?"</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>### Error Correction and Teaching</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>If the student shows a misunderstanding of game mechanics:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>- Politely clarify the correct approach, offering guidance specific to the **[ROLE_NAME]** role.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>- Suggest an alternative action within the **[ROLE_NAME]** role that aligns better with their objectives.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>### System Constraints</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>- **Keep Responses Role-Specific**: Limit responses to tasks relevant to **[ROLE_NAME]** within "The Fresh Connection."</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>- **Avoid Real-World References**: Only discuss concepts that directly apply to the game’s simulation context.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="evaluator-tool-development" class="level4" data-number="2.4.6.1">
+<h4 data-number="2.4.6.1" class="anchored" data-anchor-id="evaluator-tool-development"><span class="header-section-number">2.4.6.1</span> 4. <strong>Evaluator Tool Development</strong></h4>
+<ul>
+<li><strong>Purpose</strong>: The evaluator will test models based on their output’s relevance to the game context and correctness.</li>
+<li><strong>Criteria</strong>:
+<ul>
+<li>Accuracy of game-specific answers.</li>
+<li>Ability to stay within the restricted context.</li>
+<li>Consistency in using only game-relevant terms and strategies.</li>
+</ul></li>
+<li><strong>Evaluation Metrics</strong>:
+<ul>
+<li>Precision and recall within domain-specific questions.</li>
+<li>Adherence to game mechanics and rules.</li>
+</ul></li>
+</ul>
+</section>
+<section id="evaluation-process" class="level4" data-number="2.4.6.2">
+<h4 data-number="2.4.6.2" class="anchored" data-anchor-id="evaluation-process"><span class="header-section-number">2.4.6.2</span> 5. <strong>Evaluation Process</strong></h4>
+<ul>
+<li><strong>Design 30 Specific Test Questions</strong>: These should cover key aspects of the game, such as inventory optimization, production alignment, supplier reliability, and contract negotiation.</li>
+<li><strong>Run Evaluation Across Models</strong>:
+<ul>
+<li>Test each model’s response to the same set of questions.</li>
+<li>Use the evaluator tool to score and compare the outputs.</li>
+</ul></li>
+</ul>
+</section>
+<section id="comparison-of-model-performance" class="level4" data-number="2.4.6.3">
+<h4 data-number="2.4.6.3" class="anchored" data-anchor-id="comparison-of-model-performance"><span class="header-section-number">2.4.6.3</span> 6. <strong>Comparison of Model Performance</strong></h4>
+<ul>
+<li><strong>Outcome Analysis</strong>:
+<ul>
+<li>Review how each model performs in terms of staying within the game context.</li>
+<li>Identify strengths and weaknesses of each model’s output.</li>
+</ul></li>
+<li><strong>Insights from RAG Integration</strong>:
+<ul>
+<li>Assess how well the models leverage the retrieval system to provide contextually accurate and relevant answers.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="next-steps" class="level3" data-number="2.4.7">
+<h3 data-number="2.4.7" class="anchored" data-anchor-id="next-steps"><span class="header-section-number">2.4.7</span> Next Steps</h3>
+<ul>
+<li><strong>Integrate ChainForge</strong>: Establish a connection between ChainForge and larger models (GPT-4, Gemini, LLAMA) to streamline the integration of RAG and evaluation.</li>
+<li><strong>Test and Iterate</strong>: Implement a cycle of testing and evaluation to ensure domain adherence and performance improvement.</li>
+<li><strong>Document Findings</strong>: Record the performance data and adjustment strategies to create a knowledge base for continuous improvements.</li>
+</ul>
+<p>Prompts: Make the prompts universal</p>
+<p>jolien done karl done luca done casper done chris done</p>
+<p>Make the prompts more constrictive Set Temperature to 0. Add smaller models; -&gt; Mini Agents.</p>
+<p>Re-run Test Batches &gt; Test batches</p>
+<p>Vragen en Antwoorden sturen naar EGGE + Boxplots;</p>
+<p>En dan een Tuning Poging; met het beste kleine model; 3.1 llama Pixral:</p>
+<p>Vragen en antwoorden</p>
+<p>Haal the Halicinatie eruit: kijken of dat de oplossing is.</p>
+<p>Kleine model van Claude kijken of die dezelfde antwoorden kan krijgen - De Advanced Rag retrieval aanzetten daarop - avd. - Flow AlTernatieve Flow;</p>
+<ul>
+<li>En een tuning proberen van claude - kleiner model om kijken of we dichter in de buurt komen.</li>
+</ul>
+<p>-&gt; De check zou eerder een bevraging moeten zijn over ” kan je het vinden in de game context en anders niet. ” - Chain of thought maken voor de Prompt</p>
+<p>Tuning:</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

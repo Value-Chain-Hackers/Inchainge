@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - Research and Investigation on Model Training and Evaluation for Inchainge Game-Specific AI.md
     - summary.qmd
     - references.qmd
 
